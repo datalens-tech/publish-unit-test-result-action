@@ -806,7 +806,7 @@ def get_case_annotation(messages: CaseMessages,
 
     match case.result:
         case 'error' | 'failure':
-            level = 'failre'
+            level = 'failure'
         case _:
             level = 'notice'
 
