@@ -1,4 +1,4 @@
-FROM python:3.8-alpine
+FROM python:3.10-alpine
 
 LABEL com.github.actions.name="Publish Test Results"
 LABEL com.github.actions.description="A GitHub Action to publish test results."
