@@ -804,11 +804,11 @@ def get_case_annotation(messages: CaseMessages,
     else:
         title = f'{title} {title_state}'
 
-    level = (
-        'warning' if case.result == 'failure' else
-        'failure' if case.result == 'error' else  # failure is used for test errors
-        'notice'
-    )
+    match case.result:
+        case 'error' | 'failure':
+            level = 'failre'
+        case _:
+            level = 'notice'
 
     # pick details from message and content, but try to avoid redundancy (e.g. when content repeats message)
     # always add stdout and stderr if they are not empty
