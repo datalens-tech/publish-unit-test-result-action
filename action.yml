@@ -142,7 +142,7 @@ outputs:
 
 runs:
   using: 'docker'
-  image: 'docker://ghcr.io/datalens-tech/publish-unit-test-result-action@sha256:845a535aa996ab0066774bc3ef7fa2ade8f00fc3aaffd663d10be15a862c69be'
+  image: 'docker://ghcr.io/datalens-tech/publish-unit-test-result-action@sha256:dcc269008ae69815ed796e2a50f85aab7c046a3cbc7c4fd1c63841968d7a039d'
 
 branding:
   icon: 'check-circle'
